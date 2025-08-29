@@ -1,0 +1,32 @@
+# 1) Створення папки та git
+mkdir day-36-pl-ua-quiz && cd day-36-pl-ua-quiz
+git init
+git branch -M main
+
+# 2) .gitignore
+cat > .gitignore << 'EOF'
+__pycache__/
+*.pyc
+results.csv
+EOF
+
+# 3) LICENSE (MIT)
+cat > LICENSE << 'EOF'
+MIT License
+
+Copyright (c) 2025 Oleksandr
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+... (MIT стандартний текст скорочено) ...
+EOF
+
+# 4) README.md
+cat > README.md << 'EOF'
+# Day 36 — PL↔UA CLI Quiz
+
+Міні-вікторина для тренування польської/української.  
+**Дата:** 29.08.2025 • **Стрік:** День 36
+
+## Як запустити
+```bash
+python3 quiz.py         # або: py quiz.py на Windows
